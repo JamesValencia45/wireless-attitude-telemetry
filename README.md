@@ -106,11 +106,11 @@ The transmitter module collects telemetry data by compiling the MPU6050's YawPit
 
 # Wiring Diagrams
 
-  ## Transmitter Wiring Diagram
+  
   
   ![Transmitter Wiring](diagrams/Transmitter_Wiring_Diagram.png)
 
-  ## Receiver Wiring Diagram
+
   
   ![Transmitter Wiring](diagrams/Receiver_Wiring_Diagram.png)
 
@@ -139,7 +139,7 @@ The transmitter module collects telemetry data by compiling the MPU6050's YawPit
 
 Click the image below to watch the full system demonstration.
 
-[![Wireless Telemetry Demo](images/demoPreview.png)]([LINK_TO_VIDEO](https://github.com/JamesValencia45/wireless-attitude-telemetry/releases/tag/v1.0))
+[![Wireless Telemetry Demo](images/demoPreview.png)](https://github.com/JamesValencia45/wireless-attitude-telemetry/releases/tag/v1.0)
 
 The demonstration showcases:
 

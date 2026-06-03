@@ -16,7 +16,7 @@ This project transmits real-time orientation telemetry wirelessly from a custom 
 
 The transmitter processes MPU6050 inertial measurement unit (IMU) data and wirelessly streams pitch, yaw, and roll orientation values as an array. The receiver forwards the telemetry data over serial communication to a host computer, where the VPython application visualizes the orientation of the transmitter module in real time.
 
-This project was developed through experimentation with embedded systems, wireless telemetry, IMU motion processing, and real-time visualization. I was designed as a foundation for future experimentation involving weather balloon telemetry, amateur radio systems, and long-range wireless communication.
+This project was developed through experimentation with embedded systems, wireless telemetry, IMU motion processing, and real-time visualization. It was designed as a foundation for future experimentation involving weather balloon telemetry, amateur radio systems, and long-range wireless communication.
 
 <br>
 <br>
@@ -160,7 +160,7 @@ The embedded systems themselves necessitated soldering the NRF24L01 and Arduino 
 
 Some code focusing on parts other than the YawPitchRoll MPU6050 functionality can be deleted from the rf-orientation-telemetry program to optimize upload speeds, packet transmissions, and on-board memory storage. I, however, choose to add it in case I decide to upscale this project and fully take advantage of the MPU6050's capabilities. 
 
-The transmitter module collects telemetry data by compiling the MPU6050's YawPitchRoll values into an integer array to keep packet sizes small and transmissions few. It then utilizes the RF24 library to collapse the packet's transmission into a radio.write() command, which fully sends the YawPitchRoll array in accordance with the specific address and packet size. 
+The transmitter module collects telemetry data by compiling the MPU6050's YawPitchRoll values into an floating-point araay array to keep packet sizes small and transmissions few. It then utilizes the RF24 library to collapse the packet's transmission into a radio.write() command, which fully sends the YawPitchRoll array in accordance with the specific address and packet size. 
 
 
 <br>

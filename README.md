@@ -85,12 +85,14 @@ The transmitter module collects telemetry data by compiling the MPU6050's YawPit
 
   ## Receiver Module
   ![Transmitter Module](images/Receiver.JPG)
-  
-  ## Wireless Telemetry System
-  ![Transmitter Module](images/receiverTransmitter.JPG)
 
 
 
 
 
-#
+# Wiring Diagrams
+  ## Transmitter Wiring Diagram
+  ![Transmitter Wiring](diagrams/transmitter_wiring_diagram.png)
+
+  ## Receiver Wiring Diagram
+  ![Transmitter Wiring](diagrams/Receiver Wiring Diagram.png)

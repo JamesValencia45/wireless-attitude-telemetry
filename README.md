@@ -1,6 +1,10 @@
 # Wireless Attitude Telemetry System v1
 A wireless IMU telemetry system using NRF24L01 transceivers, Arduino Nano microcontrollers, and VPython real-time 3D visualization.
 
+
+
+
+
 # Overview
 This project transmits real-time orientation telemetry wirelessly from a custom transmitter module to a receiver module using NRF24L01 RF communication.
 
@@ -92,7 +96,31 @@ The transmitter module collects telemetry data by compiling the MPU6050's YawPit
 
 # Wiring Diagrams
   ## Transmitter Wiring Diagram
-  ![Transmitter Wiring](diagrams/transmitter_wiring_diagram.png)
+  ![Transmitter Wiring](diagrams/Transmitter_Wiring_Diagram.png)
 
   ## Receiver Wiring Diagram
-  ![Transmitter Wiring](diagrams/Receiver Wiring Diagram.png)
+  ![Transmitter Wiring](diagrams/Receiver_Wiring_Diagram.png)
+
+
+
+
+# Software
+  ## Transmitter Firmware
+   The transmitter firmware initializes the MPU6050 DMP system, processes orientation telemetry, and transmits yaw, pitch, and roll values wirelessly using NRF24L01 communication.
+
+  ## Receiver Firmware
+   The receiver firmware listens for incoming telemetry packets and forwards orientation data to the host computer through serial communication.
+
+  ## VPython Visualizer
+   The VPython visualization software reconstructs orientation data in real time and displays a live 3D representation of the transmitter module.
+
+
+
+
+
+# Demonstration Video
+
+Click the image below to watch the full system demonstration.
+
+[![Wireless Telemetry Demo](images/demo_preview.jpg)](LINK_TO_VIDEO)
+  

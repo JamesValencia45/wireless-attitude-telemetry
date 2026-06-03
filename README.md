@@ -2,7 +2,11 @@
 
 A wireless IMU telemetry system using NRF24L01 transceivers, Arduino Nano microcontrollers, and VPython real-time 3D visualization.
 
+<br>
 
+![Wireless Telemetry System](images/demoPreview.png)
+
+<br>
 
 
 
@@ -12,23 +16,10 @@ This project transmits real-time orientation telemetry wirelessly from a custom 
 
 The transmitter processes MPU6050 inertial measurement unit (IMU) data and wirelessly streams pitch, yaw, and roll orientation values as an array. The receiver forwards the telemetry data over serial communication to a host computer, where the VPython application visualizes the orientation of the transmitter module in real time.
 
-This project was developed through experimentation with embedded systems, wireless telemetry, IMU motion processing, and real-time visualization. 
+This project was developed through experimentation with embedded systems, wireless telemetry, IMU motion processing, and real-time visualization. I was designed as a foundation for future experimentation involving weather balloon telemetry, amateur radio systems, and long-range wireless communication.
 
-
-
-
-
-# Notes
-
-The embedded systems themselves necessitated soldering the NRF24L01 and Arduino Nano connections to guarantee reliability for the SPI connection. Aside from this, my first version of this wireless telemetry project worked well when drafted only with a breadboard and a soldered receiver module.
-
-Some code focusing on parts other than the YawPitchRoll MPU6050 functionality can be deleted from the rf-orientation-telemetry program to optimize upload speeds, packet transmissions, and on-board memory storage. I, however, choose to add it in case I decide to upscale this project and fully take advantage of the MPU6050's capabilities. 
-
-The transmitter module collects telemetry data by compiling the MPU6050's YawPitchRoll values into an integer array to keep packet sizes small and transmissions few. It then utilizes the RF24 library to collapse the packet's transmission into a radio.write() command, which fully sends the YawPitchRoll array in accordance with the specific address and packet size. 
-
-
-
-
+<br>
+<br>
 
 # Features
 
@@ -42,8 +33,8 @@ The transmitter module collects telemetry data by compiling the MPU6050's YawPit
       -Live orientation reconstruction and visualization
 
 
-
-
+<br>
+<br>
 
 # System Architecture
 
@@ -67,9 +58,8 @@ The transmitter module collects telemetry data by compiling the MPU6050's YawPit
             ↓
       VPython Real-Time Visualization
 
-
-
-
+<br>
+<br>
 
 # Hardware
 
@@ -80,15 +70,16 @@ The transmitter module collects telemetry data by compiling the MPU6050's YawPit
     -NRF24L01 RF Transceiver
     -MB102 Breadboard Power Module
     -9V Battery Supply
-    
+
+<br>
+
   ## Receiver Module
   
     -Arduino Nano
     -NRF24L01 RF Transceiver
 
-
-
-
+<br>
+<br>
 
 # System Images
 
@@ -96,13 +87,16 @@ The transmitter module collects telemetry data by compiling the MPU6050's YawPit
   
   ![Transmitter Module](images/Transmitter.JPG) 
 
+<br>
+
   ## Receiver Module
   
   ![Transmitter Module](images/Receiver.JPG)
 
 
-
-
+<br>
+<br>
+<br>
 
 # Wiring Diagrams
 
@@ -110,30 +104,36 @@ The transmitter module collects telemetry data by compiling the MPU6050's YawPit
   
   ![Transmitter Wiring](diagrams/Transmitter_Wiring_Diagram.png)
 
-
+<br>
   
   ![Transmitter Wiring](diagrams/Receiver_Wiring_Diagram.png)
 
 
 
-
 # Software
+
+<br>
 
   ## Transmitter Firmware
   
    The transmitter firmware initializes the MPU6050 DMP system, processes orientation telemetry, and transmits yaw, pitch, and roll values wirelessly using NRF24L01 communication.
 
+
+
   ## Receiver Firmware
   
    The receiver firmware listens for incoming telemetry packets and forwards orientation data to the host computer through serial communication.
+
+
 
   ## VPython Visualizer
   
    The VPython visualization software reconstructs orientation data in real time and displays a live 3D representation of the transmitter module.
 
 
-
-
+<br>
+<br>
+<br>
 
 # Demonstration Video
 
@@ -150,8 +150,22 @@ The demonstration showcases:
       -pitch, roll, and yaw demonstrations
 
 
+<br>
+<br>
+<br>
+
+# Notes
+
+The embedded systems themselves necessitated soldering the NRF24L01 and Arduino Nano connections to guarantee reliability for the SPI connection. Aside from this, my first version of this wireless telemetry project worked well when drafted only with a breadboard and a soldered receiver module.
+
+Some code focusing on parts other than the YawPitchRoll MPU6050 functionality can be deleted from the rf-orientation-telemetry program to optimize upload speeds, packet transmissions, and on-board memory storage. I, however, choose to add it in case I decide to upscale this project and fully take advantage of the MPU6050's capabilities. 
+
+The transmitter module collects telemetry data by compiling the MPU6050's YawPitchRoll values into an integer array to keep packet sizes small and transmissions few. It then utilizes the RF24 library to collapse the packet's transmission into a radio.write() command, which fully sends the YawPitchRoll array in accordance with the specific address and packet size. 
 
 
+<br>
+<br>
+<br>
 
 # Future Development
 
@@ -164,8 +178,9 @@ Potential future expansions include:
       -custom PCB development
       -extended telemetry range testing
 
-
-
+<br>
+<br>
+<br>
 
 
 # Acknowledgements
@@ -180,7 +195,7 @@ VPython display was adopted from guides by Paul McWhorter (toptechboy.com)
 
 Libraries used:
 
-RF24 by TMRh20
-I2Cdevlib MPU6050 libraries
-VPython
+      -RF24 by TMRh20
+      -I2Cdevlib MPU6050 libraries
+      -VPython
 

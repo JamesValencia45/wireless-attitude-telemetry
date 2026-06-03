@@ -176,7 +176,7 @@ Some NRF24L01 communication concepts were adapted from tutorials by Dejan Nedelk
 
 MPU6050 DMP functionality was based on examples from Jeff Rowberg’s I2Cdevlib project.
 
-VPython display was adopted from tutorials by Paul McWhorter (toptechboy.com)
+VPython display was adopted from guides by Paul McWhorter (toptechboy.com)
 
 Libraries used:
 

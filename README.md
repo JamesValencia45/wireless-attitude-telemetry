@@ -1,4 +1,4 @@
-# Wireless Attitude Telemetry System v1
+# Wireless Attitude Telemetry System
 
 A wireless IMU telemetry system using NRF24L01 transceivers, Arduino Nano microcontrollers, and VPython real-time 3D visualization.
 
@@ -10,9 +10,9 @@ A wireless IMU telemetry system using NRF24L01 transceivers, Arduino Nano microc
 
 This project transmits real-time orientation telemetry wirelessly from a custom transmitter module to a receiver module using NRF24L01 RF communication.
 
-The transmitter processes MPU6050 inertial measurement unit (IMU) data and wirelessly streams pitch, yaw, and roll orientation values as an array. The reciever fowards the telemetry data over serial communication to a host computer, where the VPython application visualizes the orientation of the transmitter module in real time.
+The transmitter processes MPU6050 inertial measurement unit (IMU) data and wirelessly streams pitch, yaw, and roll orientation values as an array. The receiver forwards the telemetry data over serial communication to a host computer, where the VPython application visualizes the orientation of the transmitter module in real time.
 
-This project was developed through experimentation with embedded systems, wireless telemetry, IMU motion processing, and real-time visulization. 
+This project was developed through experimentation with embedded systems, wireless telemetry, IMU motion processing, and real-time visualization. 
 
 
 

@@ -48,13 +48,13 @@ The transmitter module collects telemetry data by compiling the MPU6050's YawPit
       VPython Real-Time Visualization
 
 # Hardware
-  # Transmitter Module
+  ## Transmitter Module
     -Arduino Nano
     -MPU6050 IMU
     -NRF24L01 RF Transceiver
     -MB102 Breadboard Power Module
     -9V Battery Supply
-  # Receiver Module
+  ## Receiver Module
     -Arduino Nano
     -NRF24L01 RF Transceiver
   

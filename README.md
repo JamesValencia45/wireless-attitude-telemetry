@@ -16,37 +16,36 @@ Some code focusing on parts other than the YawPitchRoll MPU6050 functionality ca
 The transmitter module collects telemetry data by compiling the MPU6050's YawPitchRoll values into an integer array to keep packet sizes small and transmissions few. It then utilizes the RF24 library to collapse the packet's transmission into a radio.write() command, which fully sends the YawPitchRoll array in accordance with the specific address and packet size. 
 
 # Features
-
--Wireless RF telemetry transmission
--Real-time pitch, roll, and yaw tracking
--MPU6050 DMP motion processing
--Arduino Nano transmitter and receiver modules
--VPython 3D orientation visualization
--NRF24L01 transceiver communication
--USB serial telemetry streaming
--Live orientation reconstruction and visualization
+      -Wireless RF telemetry transmission
+      -Real-time pitch, roll, and yaw tracking
+      -MPU6050 DMP motion processing
+      -Arduino Nano transmitter and receiver modules
+      -VPython 3D orientation visualization
+      -NRF24L01 transceiver communication
+      -USB serial telemetry streaming
+      -Live orientation reconstruction and visualization
 
 # System Architecture
 
-TRANSMITTER MODULE
-────────────────────────
-MPU6050 IMU
-      ↓
-Arduino Nano
-      ↓
-NRF24L01 Telemetry Transmission
-      ↓
-════════ RF LINK ════════
-      ↓
-NRF24L01 Receiver
-      ↓
-Arduino Nano Receiver Module
-      ↓
-USB Serial Communication
-      ↓
-Host Computer
-      ↓
-VPython Real-Time Visualization
+      TRANSMITTER MODULE
+      ────────────────────────
+      MPU6050 IMU
+            ↓
+      Arduino Nano
+            ↓
+      NRF24L01 Telemetry Transmission
+            ↓
+      ════════ RF LINK ════════
+            ↓
+      NRF24L01 Receiver
+            ↓
+      Arduino Nano Receiver Module
+            ↓
+      USB Serial Communication
+            ↓
+      Host Computer
+            ↓
+      VPython Real-Time Visualization
 
 # Hardware
   # Transmitter Module

@@ -160,7 +160,7 @@ The embedded systems themselves necessitated soldering the NRF24L01 and Arduino 
 
 Some code focusing on parts other than the YawPitchRoll MPU6050 functionality can be deleted from the rf-orientation-telemetry program to optimize upload speeds, packet transmissions, and on-board memory storage. I, however, choose to add it in case I decide to upscale this project and fully take advantage of the MPU6050's capabilities. 
 
-The transmitter module collects telemetry data by compiling the MPU6050's YawPitchRoll values into an floating-point araay array to keep packet sizes small and transmissions few. It then utilizes the RF24 library to collapse the packet's transmission into a radio.write() command, which fully sends the YawPitchRoll array in accordance with the specific address and packet size. 
+The transmitter module collects telemetry data by compiling the MPU6050's YawPitchRoll values into an floating-point array to keep packet sizes small and transmissions few. It then utilizes the RF24 library to collapse the packet's transmission into a radio.write() command, which fully sends the YawPitchRoll array in accordance with the specific address and packet size. 
 
 
 <br>
